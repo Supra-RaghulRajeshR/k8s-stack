@@ -1,0 +1,15 @@
+---
+stack:
+  repository: https://github.com/gimlet-io/gimlet-stack-reference.git?tag=v0.35.0
+config:
+  k3s:
+    host: '*.supra.com'
+  loki:
+    enabled: true
+    storage:
+      retentionDays: 1
+  nginx:
+    enabled: true
+    host: grafana.services.supra.com
+  prometheus:
+    enabled: true
